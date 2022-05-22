@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Icons CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Performance</title>
+  </head>
+  <body>
+    <!-- Navbar Start-->
+    <div class="container-fluid position-absolute fw-bold navibar">
+      <div class="row">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="col text-center">
+        <a class="navbar-brand" href="#"><img src="./assets/images/logo.JPG" alt="Turbo Logo" width="40" height="40"
+            class="me-2 rounded-circle">M-Performance</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <div class="col">
+        <div
+          class="collapse navbar-collapse text-uppercase"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item me-4">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item me-4">
+                <a class="nav-link" href="#the-track">The Track</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sign in
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <form class="px-2 py-1">
+                    <div class="mb-3">
+                      <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                          Remember me
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  </form>
+                </ul>
+              </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+      </div>
+      </div>
+    <!-- Navbar End-->
+    <!-- Carousel Start-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image: url(./assets/images/gtr.jpg);">
+            <div class="carousel-caption d-none d-sm-block text-primary">
+              <h1 class="fw-bold">Skyline <span class="text-danger">R33</span></h1>
+              <p class="fw-bolder">2.6 L twin-turbocharged RB26DETT - Stage3 - 750hp</p>
+              <a href="#" class="btn btn-secondary rounded-pill border-warning">Order Now</a>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url(./assets/images/supra.jpg);">
+            <div class="carousel-caption d-none d-sm-block">
+              <p class="h1 fw-bold"><span class="text-warning">Supr</span><span class="text-danger">a</span></p>
+              <p class="fw-bolder">2JZ-GTE twin-turbocharged I6 - Stage 4 - 1000hp</p>
+              <a href="#" class="btn btn-secondary rounded-pill border-warning">Order Now</a>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url(./assets/images/porsche.jpg);">
+            <div class="carousel-caption d-none d-sm-block text-danger">
+              <p class="h1 fw-bold">GT3<span class="text-primary">RS</span></p>
+              <p class="fw-bolder">4.0 naturally aspirated flat-six - Stage 2 - 690hp</p>
+              <a href="#" class="btn btn-secondary rounded-pill border-warning">Order Now</a>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url(./assets/images/audi.jpg);">
+            <div class="carousel-caption d-none d-sm-block text-dark">
+              <p class="h1 fw-bold">RS<span class="text-warning">4</span></p>
+              <p class="fw-bolder">4.2L FSI V8 - Stage 2 - 580hp</p>
+              <a href="#" class="btn btn-secondary rounded-pill border-warning">Order Now</a>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url(./assets/images/mercedes.jpg);">
+            <div class="carousel-caption d-none d-sm-block text-secondary">
+              <p class="h1 fw-bold">AMG <span class="text-primary">GT</span></p>
+              <p class="fw-bolder">6.2L DOHC V8 - Stage 3 - 850hp</p>
+              <a href="#" class="btn btn-secondary rounded-pill border-warning">Order Now</a>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url(./assets/images/bmw.jpg);">
+          <div class="carousel-caption d-none d-sm-block text-warning">
+              <p class="h1 fw-bold"><span class="text-danger">M</span>6</p>
+              <p class="fw-bolder">4.4L DOHC V8 - Stage 1 - 570hp</p>
+              <a href="#" class="btn btn-secondary rounded-pill border-warning">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- Carousel End-->
+    <!-- Services Start -->
+    <div class="container text-center text-dark my-7" id="services">
+        <h3>
+          We provide awesome services
+        </h3>
+        <p> We are proud to offer an extensive range of performance, aerodynamics and handling upgrades <br> for your Performance Vehicle.</p>
+      </div>
+    <div class="row mx-5 mb-5 g-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+          <div class="card text-center h-100 border-0">
+            <div class="card-body services">
+              <i class="bi bi-bar-chart-line-fill display-2 text-secondary"></i>
+              <h5 class="card-title my-3">Performance Kits</h5>
+              <p class="card-text">We offer in-house developed performance kits consisting of a wide-range of parts from Eco-tuning to Stage4 including software/remapping.</p>
+              <a href="#" class="btn btn-primary">Check prices</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+          <div class="card text-center h-100 border-0">
+            <div class="card-body services">
+              <i class="bi bi-award-fill display-2 text-secondary"></i>
+              <h5 class="card-title my-3">Special Solutions</h5>
+              <p class="card-text">We have many special tuning options like Launch control, Rev limiter, Vmax off, Powerbox, sport displays calibration etc.</p>
+              <a href="#" class="btn btn-primary">Check prices</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <div class="card text-center h-100 border-0">
+              <div class="card-body services">
+                <i class="bi bi-bookmark-check-fill display-2 text-secondary"></i>
+                <h5 class="card-title my-3">Interior Refinements</h5>
+                <p class="card-text">We offer a full service in which customers can opt from specific interior carbon parts and custom-made parts to a completely re-upholstered interior.</p>
+                <a href="#" class="btn btn-primary">Check prices</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <div class="card text-center h-100 border-0">
+              <div class="card-body services">
+                <i class="bi bi-camera-fill display-2 text-secondary"></i>
+                <h5 class="card-title my-3">Styling</h5>
+                <p class="card-text">We provide a wide range of styling accessories to enhance the aerodynamic characteristics of your sports-car or supercar.</p>
+                <a href="#" class="btn btn-primary">Check prices</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    <!-- Services End -->
+    <!-- About Start-->
+  <div class="container my-7" id="about">
+    <div class="row">
+      <div class="col-sm-12 col-md-5 me-5">
+        <h2>Jonathan Doe</h2>
+        <p>Marketing Specialist</p>
+        <p class="text-start my-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate inventore et sint voluptatibus! Consequuntur at voluptas quaerat ut impedit est et iste ipsam doloribus ullam repellendus expedita quod unde, vero quam quas id maiores eligendi exercitationem! Tempora at necessitatibus quis.
+        </p>
+        <p class="text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque vero itaque, deserunt in corporis iste necessitatibus tenetur illo iure molestiae?</p>
+        <button type="button" class="btn btn-sm fw-bold">MORE <i class="bi bi-arrow-right"></i></button>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <img class="card-img" src="./assets/images/helmet.jpg" alt="Jonathan Doe">
+      </div>
+    </div>
+  </div>
+     <!-- About End -->
+     <!-- Video Start -->
+  <div class="container-fluid" id="the-track">
+    <div class="container-fluid text-white position-relative video">
+      <video class="w-100" autoplay loop muted>
+        <source src="./assets/video/video2.mp4" type="video/mp4">
+      </video>
+      <p class="display-5 fw-bold position-absolute text-dark"><span class="text-danger">Test your </span><span class="text-warning">skills on </span><span class="text-primary">our racetrack</span></p>
+    </div>
+  </div>
+     <!-- Video End -->  
+     <!-- Second Features Start -->  
+     <div class="container my-7 text-center text-secondary">
+      <h3 class="display-5 fw-bold">
+        Best features in the world
+      </h3>
+      <p class="text-muted">Make your automotive dreams come true and rely on the design, quality, performance and life-style expertise and experience of M-Performance.</p>
+    </div>
+  <div class="row mx-5 my-7 g-3 justify-content-center">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+        <div class="card text-center h-100 border-0">
+          <div class="card-body services">
+            <i class="bi bi-clipboard-data-fill display-2 text-secondary"></i>
+            <h5 class="card-title my-4">Key functionalities</h5>
+            <p class="card-text">We have considered the key capabilities of each package and graded each based on overall value, convenience, and price.</p>
+            <a href="#" class="btn btn-primary">More<i class="bi bi-caret-right-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+        <div class="card text-center h-100 border-0">
+          <div class="card-body services">
+            <i class="bi bi-bookmark-star-fill display-2 text-secondary"></i>
+            <h5 class="card-title my-4">Compatibility</h5>
+            <p class="card-text">We are making sure to call out which packages have the widest compatibility ranges to make finding the right software a bit easier for you.</p>
+            <a href="#" class="btn btn-primary">More<i class="bi bi-caret-right-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+          <div class="card text-center h-100 border-0">
+            <div class="card-body services">
+              <i class="bi bi-capslock-fill display-2 text-secondary"></i>
+              <h5 class="card-title my-4">Performance Center</h5>
+              <p class="card-text">The launch of the Performance Centre also allows us to get more hands-on with vehicles and customers, helping us to further invest in new products.</p>
+              <a href="#" class="btn btn-primary">More<i class="bi bi-caret-right-fill"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+          <div class="card text-center h-100 border-0">
+            <div class="card-body services">
+              <i class="bi bi bi-calculator-fill display-2 text-secondary"></i>
+              <h5 class="card-title my-4">In-House Hardware</h5>
+              <p class="card-text">Using state of the art prototyping equipment to aid the design process and in-depth testing, the team are able to ensure the highest quality products.</p>
+              <a href="#" class="btn btn-primary">More<i class="bi bi-caret-right-fill"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+          <div class="card text-center h-100 border-0">
+            <div class="card-body services">
+              <i class="bi bi-bag-check-fill display-2 text-secondary"></i>
+              <h5 class="card-title my-4">Global Development Programme</h5>
+              <p class="card-text">Testing products in a wide range of climates and conditions including altitude, fuel quality, humidity, through our network of over 400 Authorised Dealers.</p>
+              <a href="#" class="btn btn-primary">More<i class="bi bi-caret-right-fill"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+          <div class="card text-center h-100 border-0">
+            <div class="card-body services">
+              <i class="bi bi-badge-3d-fill display-2 text-secondary"></i>
+              <h5 class="card-title my-4">Sleek and smooth</h5>
+              <p class="card-text">We strive to produce beautiful products that work and fit seamlessly with your vehicle, offering an OEM+ look with aftermarket advantages.</p>
+              <a href="#" class="btn btn-primary">More<i class="bi bi-caret-right-fill"></i></a>
+            </div>
+          </div>
+        </div>
+    </div>
+     <!-- Second Features End -->  
+     <!-- Quote Start -->       
+     <div class="container-fluid my-7 text-center text-white lead p-5 parallax" style="background-image: url(./assets/images/turbo.jpg);">
+      <h3>
+        “Everyone who dreams of an exclusive car can let us turn it into a unique item.
+      </h3>
+      <h3>We realize your wishes. For you to experience your dream of the perfect car.”</h3>
+      <p class="text-white">Jonathan Doe, Web Developer</p>
+    </div>
+     <!-- Quote End -->
+     <!-- Pricing Start -->
+      <div class="container-fluid" id="pricing">
+        <div class="row p-5 g-2 justify-content-center bg-secondary">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <div class="card text-center h-100 border-success border-2">
+              <div class="card-body bg-secondary">
+                <h5 class="card-title mb-5 text-success fs-4">STAGE 1</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-secondary text-white"><sup><i class="bi bi-currency-dollar fs-4"></i></sup><span class="fw-bold fs-1">999</span><sub class="fs-5">/ life</sub></li>
+                  <li class="list-group-item bg-secondary">DPF & EGR OFF</li>
+                  <li class="list-group-item bg-secondary">DECAT</li>
+                  <li class="list-group-item bg-secondary">ANTI LAG</li>
+                  <li class="list-group-item bg-secondary">LAUNCH CONTROL</li>
+                </ul>
+                <a href="#" class="btn btn-secondary rounded-pill border-success border-2">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <div class="card text-center h-100 border-primary border-2">
+              <div class="card-body bg-secondary">
+                <h5 class="card-title mb-5 text-primary fs-4">STAGE 2</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-secondary text-white"><sup><i class="bi bi-currency-dollar fs-4"></i></sup><span class="fw-bold fs-1">2999</span><sub class="fs-5">/ life</sub></li>
+                  <li class="list-group-item bg-secondary">HARD CUT LIMITER</li>
+                  <li class="list-group-item bg-secondary">PERF GAUGE</li>
+                  <li class="list-group-item bg-secondary">MAF OFF</li>
+                  <li class="list-group-item bg-secondary">MAX</li>
+                </ul>
+                <a href="#" class="btn btn-secondary rounded-pill border-primary border-2">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <div class="card text-center h-100 border-warning border-2">
+              <div class="card-body bg-secondary">
+                <h5 class="card-title mb-5 text-warning fs-4">STAGE 3</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-secondary text-white"><sup><i class="bi bi-currency-dollar fs-4"></i></sup><span class="fw-bold fs-1">6499</span><sub class="fs-5">/ life</sub></li>
+                  <li class="list-group-item bg-secondary">INJECTOR SCALING</li>
+                  <li class="list-group-item bg-secondary">MAP SENSOR SET</li>
+                  <li class="list-group-item bg-secondary">CR SENSOR SCALING</li>
+                  <li class="list-group-item bg-secondary">+DTC</li>
+                </ul>
+                <a href="#" class="btn btn-secondary rounded-pill border-warning border-2">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <div class="card text-center h-100 border-danger border-2">
+              <div class="card-body bg-secondary">
+                <h5 class="card-title mb-5 text-danger fs-4">STAGE 4</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-secondary text-white"><sup><i class="bi bi-currency-dollar fs-4"></i></sup><span class="fw-bold fs-1">9999</span><sub class="fs-5">/ life</sub></li>
+                  <li class="list-group-item bg-secondary">HYBRID TURBO</li>
+                  <li class="list-group-item bg-secondary">FUEL INJECTION SYSTEM</li>
+                  <li class="list-group-item bg-secondary">LARGE INJECTORS</li>
+                  <li class="list-group-item bg-secondary">DUMP VALVE/WASTEGATE</li>
+                </ul>
+                <a href="#" class="btn btn-secondary rounded-pill border-danger border-2">Order Now</a>               
+              </div>
+            </div>
+          </div>
+          <hr class="text-white m-5">
+          <!-- Pricing End -->
+          <!-- Bottom Nav Start -->
+            <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light bg-secondary" id="contact">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                  <div class="col">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Privacy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Terms & Conditions</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                  </li>
+                </ul>
+                <p><i class="bi bi-badge-tm-fill ms-4"></i> 2022 BM</p>
+              </div>
+              <div class="col">
+                <div class="form text-center">
+                  <label for="floatingInput" class="form-label fs-5">Have an inquiry? Please write us a message below!</label>
+                <div class="form-floating mb-2">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Your Email address</label>
+                </div>
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                  <label for="floatingTextarea">Your message</label>
+                </div>
+                <div class="d-grid col-5 mt-2 mx-auto">
+                  <button class="btn btn-primary" type="button">Send</button>
+                </div>
+              </div>
+            </div>
+              <div class="col text-end fs-5">
+                <span class="navbar-item">
+                  <a href="#"><i class="bi bi-facebook text-white"></i></a>
+                </span>
+                <span class="navbar-item ms-3">
+                  <a href="#"><i class="bi bi-twitter text-dark"></i></a>
+                </span>
+                <span class="navbar-item ms-3">
+                <a href="#"><i class="bi bi-pinterest text-dark"></i></a>
+              </span>
+              <span class="navbar-item ms-3">
+              <a href="#"><i class="bi bi-linkedin text-dark"></i></a>
+            </span>
+          </div>
+          </div>
+              </div>
+          </nav>
+        </div>
+        </div>
+      </div>
+        <!-- Bottom Nav End -->
+    <!-- Bootstrap JS  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
